@@ -20,6 +20,9 @@
 #include <sys/utsname.h>
 #include <fcntl.h>
 
+#include <asm/system.h>
+#include <linux/head.h>
+
 int sys_ftime()
 {
 	return -ENOSYS;
@@ -302,7 +305,7 @@ int sys_umask(int mask)
 
 
 
-int sys_execve2(){};
+//int sys_execve2(){};
 
 long sys_mmap(void *start, size_t len, int prot, int flags, 
     int fd, off_t off){}
